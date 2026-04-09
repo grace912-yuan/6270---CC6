@@ -1,35 +1,29 @@
-# Exploring Trends and Group Differences in Vaccination Estimates Among Pregnant Adults in the United States
+# CC6: Income Inequality and Life Expectancy Across Countries
 
 ## Author
 Mengzhi Yuan  
 Cornell University
-
-## Contact
-my585@cornell.edu
+VTPEH6270
 
 ## Project Overview
-This project explores vaccination estimates among pregnant adults in the United States using a CDC dataset. The analysis focuses on two vaccines, Influenza and Tdap, and examines patterns over time as well as group differences by race/ethnicity and age.
+This project examines whether income inequality in 2022 is associated with life expectancy in 2022 across countries using the dataset `HDR23-24_subset.csv`.
 
 ## Research Question
-How do vaccination estimates among pregnant adults vary over time and across demographic groups in the United States?
-
-## Data Source
-CDC vaccination in pregnancy dataset: `CDC_vaccination_pregnancy_20250120.csv`
+Is income inequality in 2022 associated with life expectancy in 2022 across countries?
 
 ## Repository Structure
-- `data/` contains the raw dataset
-- `scripts/` contains the data exploration and simulation scripts
-- `output/` contains figures and generated files
-- `README.md` describes the project
+- `data/` contains the dataset used for the analysis
+- `report/` contains the R Markdown report
+- `references.bib` contains bibliography entries
+- `.gitignore` excludes unnecessary local files
 
-## Scripts
-- `data_exploration.R`: imports the dataset, examines structure and missingness, and creates exploratory summaries and figures
-- `data_simulation.R`: simulates a simple vaccination-related dataset for demonstration purposes
+## Required Packages
+- tidyverse
+- knitr
 
-## Outputs
-This repository includes exploratory figures of:
-- vaccination trends over time by vaccine
-- vaccination estimates by race and ethnicity
-
-## AI Tool Disclosure
-ChatGPT was used to support code organization, and repository setup. All final review, execution, and interpretation were completed by my own.
+## How to Run the Project
+1. Open the R project folder in RStudio.
+2. Open `report/cc6_report.Rmd`.
+3. Make sure the required packages are installed.
+4. Knit the R Markdown file to PDF.
+5. The report will reproduce the figures, model output, and references used in the analysis.
